@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import moment from "moment";
 import back_img from "./images/back_img.png";
-import vr_pic from "./images/VR_pic.svg";
+import vr_pic from "./images/VR_pic.png";
 import logo from "./images/MediVRLogo.png";
 import { getSenders } from "./Api";
 export default function Senders() {
