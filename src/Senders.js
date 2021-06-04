@@ -16,7 +16,7 @@ export default function Senders() {
   }, []);
 
 function login(){
-  var username = document.getElementById('usernam').value;
+  var username = (document.getElementById('usernam').value).toLowerCase();
   var webstring = 'https://medi-vr.vercel.app//sessions/' + username;
   if (username === '' || username == null) {alert('Please enter a username')}
   else if (list.some(obj => obj.sender_id === username)) {window.open(webstring, "_self")}
