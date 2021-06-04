@@ -193,6 +193,7 @@ body{
 .container {
   background: #dfe1eb;
   padding-bottom: 2em;
+  overflow y: scroll;
 }
 
 h1 {
