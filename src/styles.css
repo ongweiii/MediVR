@@ -343,6 +343,7 @@ small {
   background: steelblue;
   padding: 0.5em;
   border-radius: 20px;
+  margin-bottom: 0.5em;
 }
 
 .convo-person {
@@ -353,6 +354,10 @@ small {
   color: black;
 }
 
+.timestamp{
+  color: black;
+  font-size: 0.8rem;
+	
 .back{
   text-decoration: none;
   margin-left: 85%;
