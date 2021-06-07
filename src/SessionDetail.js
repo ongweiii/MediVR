@@ -106,22 +106,21 @@ export default function SessionDetail() {
                 }}
                 className={`text-${item.event === "bot" ? "left" : "right"}`}
               >
-                <div className="indv-convo">
-                  <span className="convo-person">{item.event} :</span>
-                  <br />
-                  <span className="convo-text">{item.text}</span>
-                  <br />
-                </div>
-                <small className="text-muted">
-                  {moment(item.timestamp * 1000).format("h:mma")}
-                </small>
+                {(item.text !== "Return." && item.text !== null) ? (
+                 <div className="indv-convo">
+                 <span className="convo-person">{item.event} :</span>
+                 <br />
+                 <span className="convo-text">{item.text}</span>
+                 <br />
+                 <small className="timestamp">
+                   {moment(item.timestamp * 1000).format("h:mma")}
+                 </small>
+               </div>
+                  ) : (
+                <div></div>
+              )}
               </div>
-            </div>
-      
-          ))
-        ) : (
-          <h6>Loading...</h6>
-        )}
+          </div>))): (<h6>Loading...</h6>)}
       </div> 
     </div>
     <Link className="back" title="results" to={`/sessions/${id}`}>
