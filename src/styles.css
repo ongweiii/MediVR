@@ -404,3 +404,8 @@ outline: 1px solid slategrey;
 border-radius: 10px;
 
 }
+
+.timestamp{
+	color: black;
+	font-size: 0.8em;
+}
