@@ -80,9 +80,16 @@ export default function SessionDetail() {
         <div className="container-checklist-items">
         {checklistLoaded ? (
           <div className="p-2">
-            {renderSection("1.Demo")}
-            {renderSection("2. PS")}
-            {renderSection("4. DTH")}
+            {renderSection("Demographics")}
+            {renderSection("Presenting Symptoms")}
+            {renderSection("HPI")}
+            {renderSection("Drug & Treatment History")}
+            {renderSection("Past History")}
+            {renderSection("Social History")}
+            {renderSection("Family History")}
+            {renderSection("Systems Review")}
+            {renderSection("PCE")}
+            {renderSection("NURS")}
           </div>
         ) : (
           <h6>Loading...</h6>
