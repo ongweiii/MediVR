@@ -1,4 +1,4 @@
-const API_URL = "https://medi-vr-api.vercel.app";
+const API_URL = "https://medi-vr-core-sigma.vercel.app";
 
 export async function getConversation(sender_id, timestamp) {
   return fetch(
