@@ -117,7 +117,9 @@ export default function SessionDetail() {
                  <div className="indv-convo">
                  <span className="convo-person">{item.event} :</span>
                  <br />
-                 <span className="convo-text">{item.text}</span>
+                 {item.text == "/restart" ? 
+                 (<span className="convo-text">/end</span>) :
+                 (<span className="convo-text">{item.text}</span>)}
                  <br />
                  <small className="timestamp">
                    {moment(item.timestamp * 1000).format("h:mma")}
