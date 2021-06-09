@@ -68,7 +68,7 @@ export default function SessionDetail() {
   return (
     <div className="container">
       <img src={logo} title='logo'/>
-      <h1 className="session-details">{id}</h1>
+      <h1 className="session-details">{id}: Session {window.index}</h1>
 
       <div>
         <small className="session-timestamp">
