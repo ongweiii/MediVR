@@ -16,6 +16,10 @@ export default function SessionsList() {
       setLoaded(true);
     });
   }, []);
+  
+  const setIndex = (index) => {
+    window.index = index;
+  }
 
   const ConfirmDelete = () => {
     var resp = window.confirm("Are you sure you want to delete this sender?");
@@ -41,6 +45,7 @@ export default function SessionsList() {
               <Link
                 className="text-decoration-none"
                 to={`/session/${id}/${item.timestamp}`}
+                onClick={setIndex(list.length-index)}
               >
                 <div key={index} className="indv-session-btn">
                   <h6 className="session-num">Session {list.length - index}</h6>
