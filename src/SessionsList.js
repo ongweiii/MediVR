@@ -44,7 +44,7 @@ export default function SessionsList() {
             <div className="mb-2">
               <Link
                 className="text-decoration-none"
-                to={`/session/${id}/${item.timestamp}`}
+                to={`/session/${id}/${item.timestamp}/${list.length-index}`}
                 onClick={setIndex(list.length-index)}
               >
                 <div key={index} className="indv-session-btn">
