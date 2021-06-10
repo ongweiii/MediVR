@@ -110,13 +110,16 @@ export default function SessionDetail() {
                 }}
                 className={`text-${item.event === "bot" ? "left" : "right"}`}
               >
-                {(item.text !== "Return." && item.text !== null) ? (
+               {(item.text !== "/StartConversation" && 
+              item.text !== "The conversation is restarted./The conversation is going on again./The conversation is restarting./The conversation is restarting again." &&
+              item.text !== "Return." &&
+              item.text !== "/restart" &&
+              item.text !== null ) ? (
+                
                  <div className="indv-convo">
                  <span className="convo-person">{item.event} :</span>
                  <br />
-                 {item.text == "/restart" ? 
-                 (<span className="convo-text">/end</span>) :
-                 (<span className="convo-text">{item.text}</span>)}
+                 <span className="convo-text">{item.text}</span>
                  <br />
                  <small className="timestamp">
                    {moment(item.timestamp * 1000).format("h:mma")}
