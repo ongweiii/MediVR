@@ -67,7 +67,7 @@ export default function SessionDetail() {
       <img src={logo} title='logo'/>
       {renderSession(id, window.location.href)}
 
-      <div>
+      <div className='timestampDelete'>
         <small className="session-timestamp">
           {moment(ts * 1000).format("D MMM YYYY h:mma")}
         </small>
