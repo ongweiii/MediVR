@@ -229,10 +229,13 @@ small {
   font-size: 1em;
   padding: 0.5em;
   border-radius: 1em;
-  border: 1px solid black;
   margin-right: 1%;
   float: right;
   margin-top: 0.5em;
+  background-color: palegoldenrod;
+}
+.timestamp-div{
+  margin-top: 1em;
 }
 
 .session-timestamp {
