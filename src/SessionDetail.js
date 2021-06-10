@@ -32,6 +32,16 @@ export default function SessionDetail() {
     });
   }, []);
   
+  const sessionDuration = (convoList) => {
+    var start = convoList[0].timestamp;
+    var end = convoList[convoList.length-1].timestamp;
+    var duration = moment(end).diff(start);
+    var formatted = moment.utc(duration*1000).format('mm:ss');
+    return(
+      <p className="session-duration">Session duration : {formatted}</p>
+    )
+  }
+  
   const renderSession = (id, string) =>{
     var res = string.split("/");
     return (
@@ -71,7 +81,8 @@ export default function SessionDetail() {
         <small className="session-timestamp">
           {moment(ts * 1000).format("D MMM YYYY h:mma")}
         </small>
-        </div>
+       </div>
+      {convoLoaded ? sessionDuration(convo) : <p>NIL</p>}
       <div className="container-checklist">
         <h5 className="indv-session-btn">Checklist</h5>
         <div className="container-checklist-items">
