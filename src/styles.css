@@ -234,8 +234,9 @@ small {
   margin-top: 0.5em;
   background-color: palegoldenrod;
 }
+
 .timestamp-div{
-  margin-top: 1em;
+  margin-top: 1.2em;
 }
 
 .session-timestamp {
@@ -247,15 +248,19 @@ small {
   white-space: nowrap; /*keeps text in a line*/
 }
 
-.delete {
-  margin-left: 85%;
+.session-duration{
+  display: flex;
+  font-size: 1.4em;
+  border: 2px solid red;
+  background-color: #F0F0F0;
+  border-radius: 1em;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: .5em;
+  font-weight: bold;
   font: Montserrat;
-  background-color: #6f52ed;
-  color: white;
-  border-radius: 0.5em;
-  border: 2px solid #6f52ed;
-  display: inline-block;
-  margin-bottom: .5em;
+  margin-top:5% ;
 }
 
 .checklist-title {
