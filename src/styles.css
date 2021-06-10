@@ -251,7 +251,6 @@ small {
 .session-duration{
   display: flex;
   font-size: 1.4em;
-  border: 2px solid red;
   background-color: #F0F0F0;
   border-radius: 1em;
   justify-content: center;
