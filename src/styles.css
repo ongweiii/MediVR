@@ -226,7 +226,7 @@ small {
 .session-details {
   color: black;
   float: right;
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding: 0.5em;
   border-radius: 1em;
   margin-right: 1%;
@@ -241,7 +241,7 @@ small {
 
 .session-timestamp {
   font: Montserrat;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600;
   color: black;
   letter-spacing: 0.03em;
