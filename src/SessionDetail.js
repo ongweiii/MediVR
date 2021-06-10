@@ -31,6 +31,13 @@ export default function SessionDetail() {
       });
     });
   }, []);
+  
+  const renderSession = (id, string) =>{
+    var res = string.split("/");
+    return (
+      <h1 className="session-details">{id}: Session {res[res.length - 1]}</h1>
+    )
+  };
 
   const renderSection = (section) => {
     return (
@@ -55,20 +62,10 @@ export default function SessionDetail() {
     return checklist.some((el) => el["action"] === actionName);
   };
 
-  const ConfirmDelete = () => {
-    var resp = window.confirm("Are you sure you want to delete this session?");
-    if (resp) {
-      deleteSession(id, ts).then(() => {
-        alert("Successfully deleted!");
-        history.push("/sessions/Player1");
-      });
-    }
-  };
-
   return (
     <div className="container">
       <img src={logo} title='logo'/>
-      <h1 className="session-details">{id}: Session {window.index}</h1>
+      {renderSession(id, window.location.href)}
 
       <div>
         <small className="session-timestamp">
