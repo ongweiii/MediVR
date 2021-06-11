@@ -69,7 +69,9 @@ export default function SessionDetail() {
   };
 
   const checkActionInSession = (actionName) => {
-    return checklist.some((el) => el["action"] === actionName);
+    return checklist.some(
+      (el) => el["action"] === actionName || actionName.includes(el["action"])
+      );
   };
 
   return (
